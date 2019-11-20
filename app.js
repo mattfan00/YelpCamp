@@ -8,8 +8,8 @@ var express = require('express'),
     methodOverride = require("method-override"),
     Campground = require('./models/campground'),
     Comment = require("./models/comment"),
-    User = require("./models/user"),
-    seedDB = require("./seeds.js")
+    User = require("./models/user")
+    // seedDB = require("./seeds.js")
 
 var campgroundRoutes = require("./routes/campgrounds"),
     commentRoutes = require("./routes/comments"),
