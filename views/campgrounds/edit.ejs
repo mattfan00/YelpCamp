@@ -1,0 +1,12 @@
+<% include ../partials/header.ejs %> 
+
+<h1>Edit <%= camp.name %></h1>
+<form action="/campgrounds/<%= camp.id %>?_method=PUT" method="POST">
+  <input type="text" placeholder="name" name="camp[name]" value="<%= camp.name %>">
+  <input type="text" placeholder="image url" name="camp[image]" value="<%= camp.image %>">
+  <input type="text" placeholder="description" name="camp[description]" value="<%= camp.description %>"> 
+  <input type="submit">
+</form>
+
+
+<% include ../partials/footer.ejs %> 

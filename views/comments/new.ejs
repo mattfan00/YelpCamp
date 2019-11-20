@@ -1,0 +1,9 @@
+<% include ../partials/header.ejs %>
+
+<h1>Add New Comment to <%= camp.name %></h1>
+<form action='/campgrounds/<%= camp.id %>/comments' method='POST'>
+  <input type='text' placeholder="text" name='comment[text]'>
+  <input type="submit">
+</form>
+
+<% include ../partials/footer.ejs %>

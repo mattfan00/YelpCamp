@@ -1,0 +1,19 @@
+.camp-img {
+  width: 100%;
+}
+
+.img-thumbnail {
+  padding: 0;
+}
+
+.caption {
+  padding: 1em 2em;
+}
+
+.reviews {
+  margin-top: 2rem;
+}
+
+.delete-form {
+  display: inline
+}
