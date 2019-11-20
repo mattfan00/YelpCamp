@@ -18,7 +18,12 @@ var campgroundRoutes = require("./routes/campgrounds"),
 
 // seedDB()
 
-mongoose.connect("mongodb://localhost:27017/yelp_camp", {useNewUrlParser: true, useUnifiedTopology: true})
+// mongoose.connect("mongodb://localhost:27017/yelp_camp", {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect("mongodb+srv://mattfan00:spacelf14@cluster0-wjtbp.mongodb.net/test?retryWrites=true&w=majority", {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true
+})
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.static(__dirname + "/public"))
 app.use(methodOverride("_method"))
