@@ -9,7 +9,7 @@ var express = require('express'),
     Campground = require('./models/campground'),
     Comment = require("./models/comment"),
     User = require("./models/user"),
-    seedDB = require("./seeds")
+    seedDB = require("./seeds.js")
 
 var campgroundRoutes = require("./routes/campgrounds"),
     commentRoutes = require("./routes/comments"),
